@@ -1,21 +1,92 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Solid Brain</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
-    </body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="/manifest.json">
+  <title>Solid Brain</title>
+</head>
+
+<body>
+
+  <nav class="navbar is-info" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        Solid Brain
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+
+          <div class="buttons">
+            <a id="register" href="https://solid.inrupt.com/get-a-solid-pod" target="_blank" class="button is-primary">
+              <strong>Sign up</strong>
+            </a>
+            <a id="login" class="button is-light">
+              Login
+            </a>
+            <a id="logout" class="button is-light" style="display:none">
+              Logout
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h1 id="welcome" class="title">
+        Solid Brain
+      </h1>
+      <div id="guidance">
+        Login or sign up to save wallet.
+        <hr>
+      </div>
+      <section id="app" style="display:none">
+
+
+        <div class="columns">
+          <div class="column is-one-third">
+
+            Brain
+
+          </div>
+          <div class="column">
+            <div id="bookmarks">
+            </div>
+
+
+          </div>
+        </div>
+
+      </section>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://melvincarvalho.github.io/helloworld/scripts/solid-auth-client.bundle.js"></script>
+  <script src="https://melvincarvalho.github.io/helloworld/scripts/rdflib.min.js"></script>
+  <script>
+    // INIT
+    var template = {}
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" defer>
+
+</body>
+
 </html>
